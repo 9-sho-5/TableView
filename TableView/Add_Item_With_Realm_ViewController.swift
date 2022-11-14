@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 
-class AddItemViewController: UIViewController {
+class Add_Item_With_Realm_ViewController: UIViewController {
     
     @IBOutlet var addItemButton: UIButton!
     @IBOutlet var textField: UITextField!
