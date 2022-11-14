@@ -59,7 +59,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
-
+    
+    //スワイプでの削除させない
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        if tableView.isEditing == true {
+            return .delete
+        } else {
+            return .none
+        }
+    }
 
 }
 
