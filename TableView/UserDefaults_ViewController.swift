@@ -7,9 +7,10 @@
 
 import UIKit
 
-class UserDefaults_ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class UserDefaults_ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var searchBar: UISearchBar!
     var animals = [String]()
     
     var saveData: UserDefaults = UserDefaults.standard
@@ -18,6 +19,9 @@ class UserDefaults_ViewController: UIViewController, UITableViewDelegate, UITabl
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        searchBar.delegate = self
+        
         animals = []
         
         // UserDefaultsに空のanimalsをセットする
@@ -82,6 +86,37 @@ class UserDefaults_ViewController: UIViewController, UITableViewDelegate, UITabl
             return .delete
         } else {
             return .none
+        }
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        // キーボードを閉じる
+        view.endEditing(true)
+        // 入力された値がnilでなければif文のブロック内の処理を実行
+        if let keyword = searchBar.text {
+            if keyword.isEmpty {
+                animals = saveData.object(forKey: "animals_data") as! [String]
+            } else {
+                let defaultAnimals: [String] = saveData.object(forKey: "animals_data") as! [String]
+                animals = defaultAnimals.filter({ $0.lowercased().contains(keyword.lowercased()) })
+            }
+            tableView.reloadData()
+        }
+    }
+    
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        // 入力された値がnilでなければif文のブロック内の処理を実行
+        if let keyword = searchBar.text {
+            if !keyword.isEmpty {
+                // デバッグエリアに出力
+                print(keyword)
+                let defaultAnimals: [String] = saveData.object(forKey: "animals_data") as! [String]
+                animals = defaultAnimals.filter({ $0.lowercased().contains(keyword.lowercased()) })
+            } else {
+                animals = saveData.object(forKey: "animals_data") as! [String]
+            }
+            tableView.reloadData()
         }
     }
 
