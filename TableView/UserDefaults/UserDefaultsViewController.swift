@@ -22,11 +22,11 @@ class UserDefaultsViewController: UIViewController, UITableViewDelegate, UITable
         
         searchBar.delegate = self
         
-        if ((saveData.object(forKey: "animals_data")) == nil) {
+        if let animalsData = saveData.object(forKey: "animals_data") {
+            animals = animalsData as! [String]
+        } else {
             // UserDefaultsに空のanimalsをセットする
             saveData.set(animals, forKey: "animals_data")
-        } else {
-            animals = saveData.object(forKey: "animals_data") as! [String]
         }
         
         // NavigationBarの右に「editButton」を追加する
