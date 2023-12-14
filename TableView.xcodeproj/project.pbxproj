@@ -7,35 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5244237E0EB21F3FC3B9EC4C /* Pods_TableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFC96069B24ABC3ED6F5CC6 /* Pods_TableView.framework */; };
 		AEF53746292099AD000ED040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF53745292099AD000ED040 /* AppDelegate.swift */; };
 		AEF53748292099AD000ED040 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF53747292099AD000ED040 /* SceneDelegate.swift */; };
-		AEF5374A292099AD000ED040 /* Base_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF53749292099AD000ED040 /* Base_ViewController.swift */; };
+		AEF5374A292099AD000ED040 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF53749292099AD000ED040 /* BaseViewController.swift */; };
 		AEF5374D292099AD000ED040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF5374B292099AD000ED040 /* Main.storyboard */; };
 		AEF5374F292099B1000ED040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF5374E292099B1000ED040 /* Assets.xcassets */; };
 		AEF53752292099B1000ED040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF53750292099B1000ED040 /* LaunchScreen.storyboard */; };
-		AEF537612921D548000ED040 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = AEF537602921D548000ED040 /* Realm */; };
-		AEF537632921D548000ED040 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AEF537622921D548000ED040 /* RealmSwift */; };
 		AEF537652921D6A5000ED040 /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF537642921D6A5000ED040 /* DB.swift */; };
-		AEF5376829220E8E000ED040 /* Add_Item_With_Realm_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF5376729220E8E000ED040 /* Add_Item_With_Realm_ViewController.swift */; };
-		AEF5376A29226A57000ED040 /* Realm_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF5376929226A57000ED040 /* Realm_ViewController.swift */; };
-		AEF5376C29226CFC000ED040 /* UserDefaults_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF5376B29226CFC000ED040 /* UserDefaults_ViewController.swift */; };
-		AEF5376E292273A1000ED040 /* Add_Item_With_UserDefaults_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF5376D292273A1000ED040 /* Add_Item_With_UserDefaults_ViewController.swift */; };
+		AEF5376829220E8E000ED040 /* RealmViewControllerAddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF5376729220E8E000ED040 /* RealmViewControllerAddItemViewController.swift */; };
+		AEF5376A29226A57000ED040 /* RealmViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF5376929226A57000ED040 /* RealmViewControllerViewController.swift */; };
+		AEF5376C29226CFC000ED040 /* UserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF5376B29226CFC000ED040 /* UserDefaultsViewController.swift */; };
+		AEF5376E292273A1000ED040 /* UserDefaultsAddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF5376D292273A1000ED040 /* UserDefaultsAddItemViewController.swift */; };
+		EDBF769A2B2AFCEF00B45F83 /* UserDefaultsEditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBF76992B2AFCEF00B45F83 /* UserDefaultsEditItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FFC96069B24ABC3ED6F5CC6 /* Pods_TableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF53742292099AD000ED040 /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF53745292099AD000ED040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEF53747292099AD000ED040 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AEF53749292099AD000ED040 /* Base_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base_ViewController.swift; sourceTree = "<group>"; };
+		AEF53749292099AD000ED040 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AEF5374C292099AD000ED040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEF5374E292099B1000ED040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEF53751292099B1000ED040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEF53753292099B1000ED040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEF537642921D6A5000ED040 /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
-		AEF5376729220E8E000ED040 /* Add_Item_With_Realm_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add_Item_With_Realm_ViewController.swift; sourceTree = "<group>"; };
-		AEF5376929226A57000ED040 /* Realm_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm_ViewController.swift; sourceTree = "<group>"; };
-		AEF5376B29226CFC000ED040 /* UserDefaults_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults_ViewController.swift; sourceTree = "<group>"; };
-		AEF5376D292273A1000ED040 /* Add_Item_With_UserDefaults_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add_Item_With_UserDefaults_ViewController.swift; sourceTree = "<group>"; };
+		AEF5376729220E8E000ED040 /* RealmViewControllerAddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewControllerAddItemViewController.swift; sourceTree = "<group>"; };
+		AEF5376929226A57000ED040 /* RealmViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewControllerViewController.swift; sourceTree = "<group>"; };
+		AEF5376B29226CFC000ED040 /* UserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewController.swift; sourceTree = "<group>"; };
+		AEF5376D292273A1000ED040 /* UserDefaultsAddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsAddItemViewController.swift; sourceTree = "<group>"; };
+		DDC6050EB42E7AF3D8032DA2 /* Pods-TableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableView.release.xcconfig"; path = "Target Support Files/Pods-TableView/Pods-TableView.release.xcconfig"; sourceTree = "<group>"; };
+		E1E692795C052CF2EFA0AFD0 /* Pods-TableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableView.debug.xcconfig"; path = "Target Support Files/Pods-TableView/Pods-TableView.debug.xcconfig"; sourceTree = "<group>"; };
+		EDBF76992B2AFCEF00B45F83 /* UserDefaultsEditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsEditItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,8 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEF537632921D548000ED040 /* RealmSwift in Frameworks */,
-				AEF537612921D548000ED040 /* Realm in Frameworks */,
+				5244237E0EB21F3FC3B9EC4C /* Pods_TableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +59,8 @@
 			children = (
 				AEF53744292099AD000ED040 /* TableView */,
 				AEF53743292099AD000ED040 /* Products */,
+				EE5A7E9C314ED85AD31081CC /* Pods */,
+				B0AB3FECEB26CDDBB9688FFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,11 +78,9 @@
 				AEF537662921E938000ED040 /* DB */,
 				AEF53745292099AD000ED040 /* AppDelegate.swift */,
 				AEF53747292099AD000ED040 /* SceneDelegate.swift */,
-				AEF5376729220E8E000ED040 /* Add_Item_With_Realm_ViewController.swift */,
-				AEF5376D292273A1000ED040 /* Add_Item_With_UserDefaults_ViewController.swift */,
-				AEF53749292099AD000ED040 /* Base_ViewController.swift */,
-				AEF5376B29226CFC000ED040 /* UserDefaults_ViewController.swift */,
-				AEF5376929226A57000ED040 /* Realm_ViewController.swift */,
+				AEF53749292099AD000ED040 /* BaseViewController.swift */,
+				EDBF769C2B2AFD2E00B45F83 /* Realm */,
+				EDBF769B2B2AFCF800B45F83 /* UserDefaults */,
 				AEF5374B292099AD000ED040 /* Main.storyboard */,
 				AEF5374E292099B1000ED040 /* Assets.xcassets */,
 				AEF53750292099B1000ED040 /* LaunchScreen.storyboard */,
@@ -94,6 +97,42 @@
 			path = DB;
 			sourceTree = "<group>";
 		};
+		B0AB3FECEB26CDDBB9688FFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FFC96069B24ABC3ED6F5CC6 /* Pods_TableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDBF769B2B2AFCF800B45F83 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				AEF5376D292273A1000ED040 /* UserDefaultsAddItemViewController.swift */,
+				EDBF76992B2AFCEF00B45F83 /* UserDefaultsEditItemViewController.swift */,
+				AEF5376B29226CFC000ED040 /* UserDefaultsViewController.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		EDBF769C2B2AFD2E00B45F83 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				AEF5376729220E8E000ED040 /* RealmViewControllerAddItemViewController.swift */,
+				AEF5376929226A57000ED040 /* RealmViewControllerViewController.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		EE5A7E9C314ED85AD31081CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1E692795C052CF2EFA0AFD0 /* Pods-TableView.debug.xcconfig */,
+				DDC6050EB42E7AF3D8032DA2 /* Pods-TableView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,19 +140,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEF53756292099B1000ED040 /* Build configuration list for PBXNativeTarget "TableView" */;
 			buildPhases = (
+				6F04204AA558FF0FD394B01D /* [CP] Check Pods Manifest.lock */,
 				AEF5373E292099AD000ED040 /* Sources */,
 				AEF5373F292099AD000ED040 /* Frameworks */,
 				AEF53740292099AD000ED040 /* Resources */,
+				4DBDEE19C77451C02316DDAF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = TableView;
-			packageProductDependencies = (
-				AEF537602921D548000ED040 /* Realm */,
-				AEF537622921D548000ED040 /* RealmSwift */,
-			);
 			productName = TableView;
 			productReference = AEF53742292099AD000ED040 /* TableView.app */;
 			productType = "com.apple.product-type.application";
@@ -142,9 +179,6 @@
 				Base,
 			);
 			mainGroup = AEF53739292099AD000ED040;
-			packageReferences = (
-				AEF5375F2921D548000ED040 /* XCRemoteSwiftPackageReference "realm-swift" */,
-			);
 			productRefGroup = AEF53743292099AD000ED040 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -167,16 +201,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DBDEE19C77451C02316DDAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TableView/Pods-TableView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TableView/Pods-TableView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TableView/Pods-TableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F04204AA558FF0FD394B01D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AEF5373E292099AD000ED040 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEF5376E292273A1000ED040 /* Add_Item_With_UserDefaults_ViewController.swift in Sources */,
-				AEF5376A29226A57000ED040 /* Realm_ViewController.swift in Sources */,
-				AEF5376C29226CFC000ED040 /* UserDefaults_ViewController.swift in Sources */,
-				AEF5376829220E8E000ED040 /* Add_Item_With_Realm_ViewController.swift in Sources */,
-				AEF5374A292099AD000ED040 /* Base_ViewController.swift in Sources */,
+				AEF5376E292273A1000ED040 /* UserDefaultsAddItemViewController.swift in Sources */,
+				EDBF769A2B2AFCEF00B45F83 /* UserDefaultsEditItemViewController.swift in Sources */,
+				AEF5376A29226A57000ED040 /* RealmViewControllerViewController.swift in Sources */,
+				AEF5376C29226CFC000ED040 /* UserDefaultsViewController.swift in Sources */,
+				AEF5376829220E8E000ED040 /* RealmViewControllerAddItemViewController.swift in Sources */,
+				AEF5374A292099AD000ED040 /* BaseViewController.swift in Sources */,
 				AEF537652921D6A5000ED040 /* DB.swift in Sources */,
 				AEF53746292099AD000ED040 /* AppDelegate.swift in Sources */,
 				AEF53748292099AD000ED040 /* SceneDelegate.swift in Sources */,
@@ -321,6 +398,7 @@
 		};
 		AEF53757292099B1000ED040 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1E692795C052CF2EFA0AFD0 /* Pods-TableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -349,6 +427,7 @@
 		};
 		AEF53758292099B1000ED040 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDC6050EB42E7AF3D8032DA2 /* Pods-TableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -397,30 +476,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		AEF5375F2921D548000ED040 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AEF537602921D548000ED040 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AEF5375F2921D548000ED040 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		AEF537622921D548000ED040 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AEF5375F2921D548000ED040 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AEF5373A292099AD000ED040 /* Project object */;
 }
